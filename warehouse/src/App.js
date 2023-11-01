@@ -1,9 +1,13 @@
 import './App.css';
+import { Route, Routes } from 'react-router';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Shivam</h1>
+      <Routes>
+        <Route index element={<Home/>}/>
+      </Routes>
     </div>
   );
 }

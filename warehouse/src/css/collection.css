@@ -1,0 +1,28 @@
+.collectionMainContainer{
+  background-color: #0d0056;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.collectionMainContainer>h2{
+  margin: 0rem 0 2rem 0;
+}
+.collectionContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.collectionList{
+  min-width: 30%;
+  margin-bottom: 1rem;
+}
+
+/* This is for collection list */
+
+.collectionListMainContainer{
+  background-color: rgb(28, 13, 113);
+  color: white;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+}
