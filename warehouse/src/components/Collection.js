@@ -17,8 +17,6 @@ function Collection() {
         console.error('Error fetching data:', error);
       });
   },[]);
-  // console.log(warehouse);
-
 
   return (
     <div>
@@ -33,7 +31,7 @@ function Collection() {
           <div className='collectionList'  key={warehouse.id}>
               <CollectionList warehouse={warehouse} key={warehouse.id}/>
           </div>
-        )): console.log("Empty")}
+        )): null}
       </div>
      
      </div>

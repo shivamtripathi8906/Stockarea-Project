@@ -1,3 +1,11 @@
+.loading-screen{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: none;
+  background-color: black;
+}
 .collectionMainContainer{
   background-color: #0d0056;
   color: white;

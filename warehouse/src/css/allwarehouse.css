@@ -1,4 +1,62 @@
 .allWarehouseMainContainer{
   background-color: #0d0056;
-  color: wheat;
+  color: white;
+}
+.warehouseHeader{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.warehousebackButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  color: white;
+}
+.warehousebackButton:hover{
+  scale: 1.05 ;
+}
+/* MdWarehouse */
+.detailsMainCOntainer{
+  /* border: 1px solid black; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconContainer{
+  /* border: 1px solid black; */
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+.detailsContainer{
+  background-color: rgb(28, 13, 113);
+  /* border: 1px solid black; */
+  padding: 2rem 0rem 2rem 2rem;
+  width: 70%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 15px 19px 39px -8px rgba(0,0,0,0.59);
+-webkit-box-shadow: 15px 19px 39px -8px rgba(0,0,0,0.59);
+-moz-box-shadow: 15px 19px 39px -8px rgba(0,0,0,0.59);
+}
+.detailsNameContainer{
+  font-size: 1.8rem;
+  /* border: 1px solid white; */
+}
+.image{
+  width: 80%;
+}
+.image>img{
+  width: 100%;
+  height: 100%;
+  box-shadow: -4px 62px 47px -33px rgba(0,0,0,0.59);
+-webkit-box-shadow: -4px 62px 47px -33px rgba(0,0,0,0.59);
+-moz-box-shadow: -4px 62px 47px -33px rgba(0,0,0,0.59);
 }
