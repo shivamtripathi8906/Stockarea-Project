@@ -18,6 +18,39 @@
   margin-bottom: 1rem;
   margin-right: 1rem;
 }
+.searchBar{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.searchButton{
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10rem;
+  border: 1px solid white;
+  background-color: rgb(28, 13, 113);
+  margin-right: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border: 2px solid rgb(107, 84, 253);
+  background-image: -webkit-linear-gradient(30deg, rgb(107, 84, 253) 50%, transparent 50%);
+  background-image: linear-gradient(30deg, rgb(107, 84, 253) 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out;
+}
+.searchButton:hover{
+  background-position: 100%;
+  color: white;
+}
 
 @media(max-width: 980px){
   .collectionList{

@@ -7,4 +7,6 @@
 .page-width{
   padding: 0 8rem 0 8rem;
 }
+
 /* rgb(107, 84, 253) */
+/* json-server --watch db.json --port 8000 */

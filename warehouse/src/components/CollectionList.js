@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function CollectionList(props) {
-  // console.log(props)
+
   return (
     <div>
       <div className='collectionListMainContainer'>

@@ -2,28 +2,31 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import CollectionList from './CollectionList';
 import "../css/collection.css";
+import axios from 'axios';
+import { IoIosSearch } from "react-icons/io";
 
 function Collection() {
   const [warehouse, setWarehouse] = useState([]);
 
-
-  useEffect(() => {
-    import('../db/db.json')
-      .then(data => {
-        setWarehouse(data.warehouse);
+  useEffect(()=>{
+    axios.get('http://localhost:8000/warehouse')
+      .then((response) => {
+        setWarehouse(response.data);
       })
-      .catch(error => {
-        console.error('Error fetching local JSON data:', error);
+      .catch((error) => {
+        console.error('Error fetching data:', error);
       });
-  }, []);
-
+  },[]);
   // console.log(warehouse);
 
 
   return (
     <div>
      <div className='collectionMainContainer page-width'>
+      <div className='searchBar'>
       <h2>List of all the warehouses</h2>
+      <button className='searchButton'>Search &nbsp; <IoIosSearch/></button>
+      </div>
       <div className='collectionContainer'>
         {warehouse.length !==0 ?
         warehouse.map((warehouse) => (
